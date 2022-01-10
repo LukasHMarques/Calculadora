@@ -1,0 +1,43 @@
+:root {
+    --fontes: rgb(25, 21, 71);
+    --cor-botoes-excluir: red;
+    --cor-botoes-normal: rgb(36, 27, 27);
+  }
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: white;
+}
+
+/* Estilo Calculadora */
+main {
+    background-color: rgb(92, 91, 91);
+    width: 420px;
+    margin: auto;
+    padding: 10px;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--fontes);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main textarea {
+    margin: 10px;
+    height: 100px;
+    width: 390px;
+    resize: none; /* Desabilitar o Negócio para aumentar o TextArea*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table tr td button {
+    width: 100px;
+    margin: 1px;
+    color: var(--cor-botoes-normal);
+}
+/* Fim Estilo Calculadora */
