@@ -1,2 +1,2 @@
 # Calculadora
- Calculadora Avançada, para treinar JS, CSS, versionamento e branch.
+ Calculadora, para treinar JS, CSS, versionamento e branch.
