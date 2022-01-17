@@ -13,12 +13,13 @@
     <main>
         <h1>Calculadora</h1>
         <form name="principal">
-            <textarea id="visor" cols="30" rows="10"></textarea>
+            <textarea class="visor_conta" id="visor_conta" cols="30" rows="5"></textarea>
+            <textarea class="visor" id="visor" cols="30" rows="5"></textarea>
         </form>
         <table>
             <tr>
                 <td><button>%</button></td>
-                <td><button onclick="apagarNumero()">CE</button></td> <!--ONCLICK AINDA NÃO EXISTE -->
+                <td><button onclick="apagarVisor()">CE</button></td> <!--ONCLICK AINDA NÃO EXISTE -->
                 <td><button onclick="apagarTudo()">C</button></td>
                 <td><button onclick="apagar_ultimo_caractere()">X</button></td>
             </tr>
