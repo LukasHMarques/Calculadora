@@ -1,5 +1,5 @@
 :root {
-    --fontes: rgb(25, 21, 71);
+    --fontes: white;
     --cor-botoes-excluir: red;
     --cor-botoes-normal: rgb(36, 27, 27);
   }
@@ -14,30 +14,54 @@ body {
 }
 
 /* Estilo Calculadora */
-main {
-    background-color: rgb(92, 91, 91);
+.corpo_calculadora {
+    background-color: rgba(0, 0, 0, 0.692);
     width: 420px;
     margin: auto;
-    padding: 10px;
+    padding: 12px;
+    border-radius: 15px;
 }
 
-main h1 {
+.titulo_calculadora {
     text-align: center;
     color: var(--fontes);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin: 5px;
 }
 
-main textarea {
-    margin: 10px;
-    height: 100px;
+.visor_conta {
+    margin-bottom: 0px;
+    margin-left: 12px;
+    height: 35px;
     width: 390px;
     resize: none; /* Desabilitar o Negócio para aumentar o TextArea*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: none;
 }
 
-table tr td button {
+.visor {
+    margin-top: -4px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    height: 65px;
+    width: 390px;
+    resize: none; /* Desabilitar o Negócio para aumentar o TextArea*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: none;
+}
+
+.botoes {
     width: 100px;
+    height: 45px;
     margin: 1px;
-    color: var(--cor-botoes-normal);
+    color:  var(--fontes);;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border: none;
+}
+
+.botoes:hover{
+    background-color: black;
 }
 /* Fim Estilo Calculadora */
