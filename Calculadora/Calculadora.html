@@ -6,53 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+
+    <!-- Adicionando CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main class="corpo_calculadora">
         <h1 class="titulo_calculadora">Calculadora</h1>
-        <textarea class="visor_conta" name="" id="" cols="30" rows="5"></textarea>
-        <textarea class="visor" name="" id="" cols="30" rows="5"></textarea>
+        <textarea class="visor_conta" id="visor_conta" cols="30" rows="5"></textarea>
+        <textarea class="visor" id="visor" cols="30" rows="5"></textarea>
         <table>
             <tr>
                 <td><button class="botoes">%</button></td>
-                <td><button class="botoes">CE</button></td>
-                <td><button class="botoes">C</button></td>
-                <td><button class="botoes">X</button></td>
+                <td><button class="botoes" onclick="apagarVisor()">CE</button></td>
+                <td><button class="botoes" onclick="apagarTudo()">C</button></td>
+                <td><button class="botoes" onclick="apagar_ultimo_caractere()">X</button></td>
             </tr>
             <tr>
                 <td><button class="botoes">1/x</button></td>
                 <td><button class="botoes">x²</button></td>
                 <td><button class="botoes">2√x</button></td>
-                <td><button class="botoes">÷</button></td>
+                <td><button class="botoes" onclick="insert_operacao('/')">÷</button></td>
             </tr>
             <tr>
-                <td><button class="botoes">7</button></td>
-                <td><button class="botoes">8</button></td>
-                <td><button class="botoes">9</button></td>
-                <td><button class="botoes">x</button></td>
+                <td><button class="botoes" onclick="insert('7')">7</button></td>
+                <td><button class="botoes" onclick="insert('8')">8</button></td>
+                <td><button class="botoes" onclick="insert('9')">9</button></td>
+                <td><button class="botoes" onclick="insert_operacao('*')">x</button></td>
             </tr>
             <tr>
-                <td><button class="botoes">4</button></td>
-                <td><button class="botoes">5</button></td>
-                <td><button class="botoes">6</button></td>
-                <td><button class="botoes">-</button></td>
+                <td><button class="botoes" onclick="insert('4')">4</button></td>
+                <td><button class="botoes" onclick="insert('5')">5</button></td>
+                <td><button class="botoes" onclick="insert('6')">6</button></td>
+                <td><button class="botoes" onclick="insert_operacao('-')">-</button></td>
             </tr>
             <tr>
-                <td><button class="botoes">1</button></td>
-                <td><button class="botoes">2</button></td>
-                <td><button class="botoes">3</button></td>
-                <td><button class="botoes">+</button></td>
+                <td><button class="botoes" onclick="insert('1')">1</button></td>
+                <td><button class="botoes" onclick="insert('2')">2</button></td>
+                <td><button class="botoes" onclick="insert('3')">3</button></td>
+                <td><button class="botoes" onclick="insert_operacao('+')">+</button></td>
             </tr>
             <tr>
                 <td><button class="botoes">+/-</button></td>
-                <td><button class="botoes">0</button></td>
-                <td><button class="botoes">,</button></td>
-                <td><button class="botoes">=</button></td>
+                <td><button class="botoes" onclick="insert('0')">0</button></td>
+                <td><button class="botoes" onclick="insert('.')">.</button></td>
+                <td><button class="botoes" onclick="calcular()">=</button></td>
             </tr>
         </table>
     </main>
+
+    <!-- Adicionando  JS -->
+    <script src="js/calculadora.js"></script>
+
 </body>
 
 </html>
